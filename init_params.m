@@ -16,6 +16,7 @@ k_motor = 80;
 k_Tp = 0;
 k_omega = 0;
 e = 0.9;
+g = 9.80665;
 
 
 % Aerodynamic coefficients
