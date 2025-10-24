@@ -1,0 +1,24 @@
+% Initial States
+u = 20; % m/s
+v = 0; 
+w = 0;
+
+p = 0;
+q = 0;
+r = 0;
+
+phi = 0;
+theta = 3*(pi/180);
+psi = 0;
+
+
+x = 0;
+y = 0;
+z = -50; 
+
+
+% Control inputs (radians)
+
+del_a = 0;
+del_e = 2*(pi/180);
+del_r = 0;

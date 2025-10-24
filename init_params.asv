@@ -62,4 +62,4 @@ Cl_del_r = 0.105;
 
 
 ForceCoefficients = [CL0; CL_alpha; CLq; CL_del_e; CD0; CD_alpha,; CDq; CD_del_e; CDp; CY0; CY_beta; CYp; CY_r; CY_del_a; CY_del_r];
-MomentCoefficients = [ Cl0; Cl_beta; Cl_p; Cl_r; Cl_del_a; Cl_del_r; Cm0; Cm_alpha; Cmq; Cm_del_e; Cn0; Cn_beta; Cn_p; Cn_r; Cn_del_a; Cn_del_r];
+MomentCoefficients = []
