@@ -18,3 +18,28 @@ It is an aviation system, comparable to a manned aircraft + cockpit + ATC + pilo
 ## Breaking Down A UAS - Subsystem By System
 
 ### 1. Unmanned Aircraft (UA)
+
+This is the physical flying vehicle.
+
+It contains:
+- Airframe
+- Propulsion system
+- Control surfaces
+- Electrical power system
+- Onboard avionics
+
+The UA cannot fly safely on its own without the rest of the UAS.
+
+### 2. Onboard Avionics (The Brain)
+
+This is where most of the UAS intelligence lives.
+
+Core Avionics Functions:
+|Function|Purpose|
+|--------|-------------|
+|Sensing|Measure motion and enviroment|
+|Estimation|Estimate true aircraft state|
+|Control|Stabilize and command mode|
+|Navigation|Know where it is|
+|Autonomy|Decide what to do|
+
