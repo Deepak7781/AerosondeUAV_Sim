@@ -43,3 +43,4 @@ Core Avionics Functions:
 |Navigation|Know where it is|
 |Autonomy|Decide what to do|
 
+#### 2.1 Sensors
