@@ -154,3 +154,14 @@ Payloads include modular sensors/effectors adding 10-50% mass. Interface via MIL
 
 - Health: Vibration spectra, battery SoC (State of Charge).
 
+### 8. Ground Control Station (GCS)
+
+Laptop/tablet setup with joysticks, screens, and software (e.g., QGroundContrpl or custom GUI in Unity)
+
+#### Core Functions:
+
+- Planning: Drag-drop waypoints; simulatw via X-Plane integration.
+- Monitoring: Real-time dashboards (e.g., attitude globe, telemetry strips)
+- Diagnostics: Log replay for post-flight analysis; predictive maintenance (e.g., vibration trends)
+- Override: Lossless manual mode with haptic feedback
+
