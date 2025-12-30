@@ -99,4 +99,19 @@ Details:
 - Wind Compensation: Sideslip $\beta = sin^{-1}$(wind component); crab angle for track hold.
 - Run Rate: 10-50 Hz, as outer dynamics are slower (time constants 1-10 s).
 
+### 4. Guidance & Navigation
+
+- Path Planning and localiztaion. Runs on higher-level processors(e.g., companion computers like Raspberry Pi).
+
+#### Guidance:
+- Primitives: Straight legs, Dubins paths (minimum-turn circles), loiter (racetrack or orbit at 500m radius).
+
+-Generators: A* for obstacle grids; RRT for dynamic environments.
+
+- Metrics: Cross-track error < 10m; energy-optimal via Breguet range equation
+
+#### Navigation:
+- Outputs: NED frame (North-East-Down) position; ground vector; wind vector (from airspeed - groundspeed).
+
+- Enhancements: Terrain following (DTED maps); VFR/IFR modes.
 
