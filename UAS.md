@@ -115,3 +115,15 @@ Details:
 
 - Enhancements: Terrain following (DTED maps); VFR/IFR modes.
 
+### 5. Actuators
+
+Actuators convert electrical signals to  mechanical force. Non-ideal: Bandwidth limited (10 - 100 Hz), backlash (0.1-1 $\degree$), and saturation (e.g., $\pm 45 \degree$ deflection max)
+
+#### Types
+
+- Servos: PWM-driven (50 Hz, 1-2 ms pulse); torque 1 - 50 kg-cm (e.g, Hotec for control surfaces).
+
+- Motors: BLDC with ESCs (Electronic Speed Controllers, 20-100A); KV rating(RPM/V) for prop matching.
+
+- Exotics: Hydraulic for large UAS (e.g., actuators in MQ-9 Reaper).
+
