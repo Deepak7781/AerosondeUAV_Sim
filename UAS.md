@@ -43,4 +43,35 @@ Core Avionics Functions:
 |Navigation|Know where it is|
 |Autonomy|Decide what to do|
 
-#### 2.1 Sensors
+#### 2.1 Sensors (Perception Layer)
+The aircraft does not know its state directly.
+
+It measure:
+- Accelerations (IMU)
+- Angular rate (Gyros)
+- Pressure
+- GPS signals
+
+These are: 
+- Noisy
+- Biased
+- Delayed
+
+**Raw sensor data is useless without estimation**
+
+#### 2.2 State Estimation (The Most Crictical Block)
+
+This answers:
+    "What is my position, velocity, attitude,and health right now?"
+
+Uses:
+- INS mechanization
+- GPS correction
+- EKF/UKF
+
+Without estimation:
+- Control loops diverge
+- Navigation fails
+- Aircraft crashes
+
+**This is the digital equivalent of a pilot's senses.**
