@@ -141,3 +141,16 @@ Payloads include modular sensors/effectors adding 10-50% mass. Interface via MIL
 
 - Specialized: Aerosonde's dropsonde measure hurricane cores (temp, pressure, wind)
 
+### 7. Command and Control (C2) Link
+
+#### Uplink (Ground -> UA)
+
+- Commands: Arm/disarm, waypoint uploads (e.g., MAVLink protocol packets).
+- Manual: Joystick overrides (rate-limited to 1Hz).
+
+#### Downlink (UA -> Ground)
+
+- Telemetry: State vector at 1 - 10 Hz; H.264 video at 720p/30fps
+
+- Health: Vibration spectra, battery SoC (State of Charge).
+
