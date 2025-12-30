@@ -165,3 +165,5 @@ Laptop/tablet setup with joysticks, screens, and software (e.g., QGroundContrpl 
 - Diagnostics: Log replay for post-flight analysis; predictive maintenance (e.g., vibration trends)
 - Override: Lossless manual mode with haptic feedback
 
+### 9. Autonomy & Mission Logic
+
