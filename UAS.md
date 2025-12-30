@@ -127,3 +127,17 @@ Actuators convert electrical signals to  mechanical force. Non-ideal: Bandwidth 
 
 - Exotics: Hydraulic for large UAS (e.g., actuators in MQ-9 Reaper).
 
+### 6. Payload
+
+Payloads include modular sensors/effectors adding 10-50% mass. Interface via MIL-STD-1553 or Ethernet.
+
+#### Examples & Impacts
+
+- EO/IR Gimbals: FLIR Vue TZ20 (1080p, 20x zoom); power 10W, drag CdA ~ 0.01 $m^2$
+
+- NDT (Non-Destructive Testing): Ultrasonic or GPR for infrastructure inspection.
+
+- Relays: Mesh radios (e.g., Silvus StreamCaster) extend C2 to 100 km.
+
+- Specialized: Aerosonde's dropsonde measure hurricane cores (temp, pressure, wind)
+
