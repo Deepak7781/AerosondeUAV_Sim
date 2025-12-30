@@ -75,3 +75,28 @@ Without estimation:
 - Aircraft crashes
 
 **This is the digital equivalent of a pilot's senses.**
+
+### 3. Flight Control System (AutoPilot)
+
+FCS provides low-level automation for stability and tracking. Implemented as nested PID loops on FPGAs/MCUs (e.g., STM32). Not "smart" - just reactive.
+
+#### 3.1 Inner Loop (Stability Augmentation)
+
+Fastest layer: Reflexive damping of disturbances (turbulence, asymmetry).
+
+Details:
+- Controls: Roll rate (p - aileron); pitch rate (q - elevator); yaw (r - rudder). Gains tuned via root locus.
+
+- Loop Dynamics: Bandwidth 5 - 20 rad/s; phase margin > 45 $\degree$ for robustness
+-Run Rate: 100-1000 Hz (e.g., 400 Hz in PX4) to outpace actuator delays (~20 ms);
+
+#### 3.2 Outer Loop (Guidance Tracking)
+
+Slower layer: Translates high-level commands to inner-loopn setpoints. 
+
+Details:
+- Controls: Altitude; Speed; Heading
+- Wind Compensation: Sideslip $\beta = sin^{-1}$(wind component); crab angle for track hold.
+- Run Rate: 10-50 Hz, as outer dynamics are slower (time constants 1-10 s).
+
+
